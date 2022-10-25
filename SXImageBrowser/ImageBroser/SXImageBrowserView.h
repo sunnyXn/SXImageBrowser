@@ -25,11 +25,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, assign) NSInteger currentIndex;
 
-/// 消失比例 default = 0.5
+/// 最小显示缩放比例 默认0.35
+@property(nonatomic, assign) CGFloat minZoomScale;
+
+/// 最小消失比例 default = 0.25
 @property(nonatomic, assign) CGFloat dismissScale;
 
-/// 滑动消失最大长度，默认 self.width * 1.2
+/// 滑动消失最大长度，默认 self.scrollview.height * 1.2
 @property(nonatomic, assign) CGFloat maxDismissLength;
+
+/// 最大滑动向量Y 默认800
+@property(nonatomic, assign) CGFloat maxVelocityY;
+
+/// scrollview的frame 默认self.bounds
+@property(nonatomic, assign) CGRect startScrollFrame;
+
+/// pan手势首次point
+@property(nonatomic, assign) CGPoint startLocation;
 
 
 @end

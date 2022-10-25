@@ -38,6 +38,8 @@
     self.minimumZoomScale = 1.0f;
     self.maximumZoomScale = 2.0f;
     
+    self.showsVerticalScrollIndicator = NO;
+    self.showsHorizontalScrollIndicator = NO;
     if (@available(iOS 11.0, *)) {
         self.contentInsetAdjustmentBehavior =  UIScrollViewContentInsetAdjustmentNever;
     }
